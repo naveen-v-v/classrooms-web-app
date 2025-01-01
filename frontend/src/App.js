@@ -11,6 +11,7 @@ import Homepage from './pages/HomePage';
 const ProtectedRoute = ({ children }) => {
   const { auth } = useAuth();
   return auth.user ? children : <Navigate to='/login'/>
+}
 
 const App = () => {
   return (
